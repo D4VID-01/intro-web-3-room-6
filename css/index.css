@@ -1,5 +1,4 @@
 * {
-    overflow: hidden;
     box-sizing: border-box;
 }
 
@@ -49,38 +48,45 @@ article:hover .contenedorImagen img {
 
 
 /* ------------------------------------------------------------------------------------------------ */
+/* Ajuste del logo */
+header img {
+    width: 100px;  /* Tamaño del logo */
+}
 
-.nav-tabla{
-    width: 100%;
-    text-align: center;
-    border-collapse: collapse;
+/* Barra de navegación */
+nav .navbar-nav {
+    display: flex;
+    justify-content: flex-end;  /* Alinea los enlaces a la derecha */
+    margin: 0;
+    padding: 0;
+}
+
+nav .nav-item {
+    margin-right: 20px;
+}
+
+.custom-navbar {
     background-color: #9D79BC;
 }
 
-.nav-tabla td{
-    padding: 10px;
-    border: 1px solid #253D5B;
-}
-
-.nav-tabla a{
-    text-decoration: none;
+.nav-link {
     color: #253D5B;
     font-weight: bold;
-    transition: color 0.3s, background-color 0.3s;
-}
-
-.nav-tabla a:hover{
-    color: #FEC601;
-    background-color: #307473;
-    padding: 12px 20px;
+    transition: background-color 0.3s, color 0.3s;
     border-radius: 5px;
 }
+
+.nav-link:hover {
+    color: #FEC601;
+    background-color: #307473;
+}
+
 
 footer{
     background-color: #253D5B;
     color: white;
     text-align: center;
-    padding: 20px o;
+    padding: 20px 0;
     margin-top: 40px;
 }
 
@@ -109,4 +115,16 @@ footer{
     width: 32px;
     height: 32px;
     margin: 0 10px;
+}
+
+.footer-icons img {
+    width: 32px;
+    height: 32px;
+    margin: 0 10px;
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Añade una transición suave */
+}
+
+.footer-icons img:hover {  /* Aplica el hover a las imágenes directamente */
+    transform: scale(1.2);  /* Aumenta el tamaño de la imagen al pasar el mouse */
+    opacity: 0.8;           /* Reduce la opacidad para un efecto visual */
 }
