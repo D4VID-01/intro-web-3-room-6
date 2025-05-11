@@ -9,27 +9,51 @@
 </head>
 <body>
     <header>
-        <div class="container d-flex justify-content-between align-items-center py-3">
-            <!-- Logo alineado a la izquierda -->
-            <img src="images/ES.svg" alt="Logo" class="img-fluid" style="width: 100px;">
-            
-            <!-- Barra de navegación -->
-            <nav class="navbar navbar-expand-lg custom-navbar w-100" >
-                <ul class="navbar-nav d-flex justify-content-end m-0">
-                    <li class="nav-item mx-3"><a href="#" class="nav-link text-dark">Home</a></li>
-                    <li class="nav-item mx-3"><a href="#" class="nav-link text-dark">Acerca de Nosotros</a></li>
-                    <li class="nav-item mx-3"><a href="#" class="nav-link text-dark">Contáctanos</a></li>
-                    <li class="nav-item mx-3"><a href="#" class="nav-link text-dark">Eventos</a></li>
-                    <li class="nav-item mx-3"><a href="#" class="nav-link text-dark">Próximos Eventos</a></li>
-                    <li class="nav-item mx-3"><a href="#" class="nav-link text-dark">Registro</a></li>
-                    <li class="nav-item mx-3"><a href="#" class="nav-link text-dark">LogIn</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    
-        
-        <main>
+        <nav class="navbar navbar-expand-lg custom-navbar">
+          <div class="container-fluid">
+            <!-- Logo centrado -->
+            <a class="navbar-brand mx-auto" href="#">
+              <img src="images/ES.svg" alt="Logo" class="img-fluid" style="width: 100px;">
+            </a>
+      
+            <!-- Botón del menú colapsable (hamburguesa) -->
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+      
+            <!-- Menú principal: centrado en pantallas grandes -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav mx-auto">
+                <!-- Home visible en todas las pantallas -->
+                <li class="nav-item mx-3">
+                  <a href="#" class="nav-link text-dark">Home</a>
+                </li>
+                <!-- Resto del menú visible solo en pantallas grandes -->
+                <li class="nav-item mx-3 d-none d-lg-block">
+                  <a href="#" class="nav-link text-dark">Acerca de Nosotros</a>
+                </li>
+                <li class="nav-item mx-3 d-none d-lg-block">
+                  <a href="#" class="nav-link text-dark">Contáctanos</a>
+                </li>
+                <li class="nav-item mx-3 d-none d-lg-block">
+                  <a href="#" class="nav-link text-dark">Eventos</a>
+                </li>
+                <li class="nav-item mx-3 d-none d-lg-block">
+                  <a href="#" class="nav-link text-dark">Próximos Eventos</a>
+                </li>
+                <li class="nav-item mx-3 d-none d-lg-block">
+                  <a href="#" class="nav-link text-dark">Registro</a>
+                </li>
+                <li class="nav-item mx-3 d-none d-lg-block">
+                  <a href="#" class="nav-link text-dark">LogIn</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>      
+      
+              <main>
             <article class="contenedorEventoHans">
                 <div class="contenedorImagen">
                     <img src="images/eventoHans.png" alt="Imagen de musicos con velas alrededor ">
