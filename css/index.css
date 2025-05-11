@@ -1,32 +1,48 @@
 * {
     box-sizing: border-box;
+    height: auto;
 }
-
 
 
 main{
-    height: 100vh;
-    padding: 10px;
+    overflow: hidden;
+    height: auto;
+    padding: 5rem 20px 10rem 20px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     gap: 20px;
     flex-wrap: wrap;
+    background: linear-gradient(to bottom, #9D79BC, rgb(33, 37, 41));
+    color: white; /* Opcional, si el fondo se oscurece */
 }
 
-.contenedorEvento1{
+.contenedorEventoHans, .contenedorEventoBallet, .contenedorEventoExperiencia{
     width: 250px;
     height: 400px;
-    border-radius: 10px;
-    border: 1px solid black;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    border-radius: 0px 0px 30px 0;
+    border: 2px solid #307473;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); 
+    overflow: hidden;
+    position: relative;
 }
+
+.contenedorEventoHans:hover, .contenedorEventoBallet:hover, .contenedorEventoExperiencia:hover {
+    box-shadow: 0 0 20px 9px #307473;
+    border-color: #307473;
+    transition: ease 2.5s;
+    .contenedorBoton{
+        opacity: 1;
+        transition: ease 2.5s;
+    }
+}
+
 
 .contenedorImagen{
     background-color: aliceblue;
     width: 100%;
     height: 50%;
-    border-radius: 10px;
+    overflow: hidden; 
 }
 
 .contenedorImagen img{
@@ -37,8 +53,61 @@ main{
 }
 
 article:hover .contenedorImagen img {
-    transform: scale(1.2);  
-  }
+    transform: scale(1.2);
+    transition: ease 2.5s;  
+}
+
+.contenedorTexto{
+    overflow: hidden;
+    margin: 5px 10px 0px 10px;
+}
+
+.contenedorUbicacion{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+svg{
+    width: 16px;
+    margin-right: 5px;
+}
+
+span{
+    font-size: 0.8rem;
+}
+
+p{
+    font-size: 0.7rem;
+}
+
+h6{
+    padding-top: 5px;
+}
+
+
+
+.contenedorBoton{
+    opacity: 0.03;
+    padding: 0;
+    margin: 0;
+    background-color:  #FEC601;
+    height: 10%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.contenedorBoton > a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
 
 
 
@@ -87,7 +156,9 @@ footer{
     color: white;
     text-align: center;
     padding: 20px 0;
-    margin-top: 40px;
+    box-sizing: border-box;
+    overflow: hidden ;
+    border: none;
 }
 
 .footer-links a{
