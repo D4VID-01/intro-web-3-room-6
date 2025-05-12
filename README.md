@@ -67,8 +67,8 @@ Abre el archivo formulario.html para el formulario de registro.
 - Formulario de Registro: Los usuarios ingresan sus datos, seleccionan los eventos que desean, y pueden cargar su credencial de estudiante si es aplicable.
 
 ## Capturas de Pantalla
-![Pantalla de inicio](home.png)
-![Formulario de registro](formulario.png)
+![Pantalla de inicio](image/home.png)
+![Formulario de registro](image/formulario.png)
 
 ## Contribuciones
 Si deseas contribuir a este proyecto, siéntete libre de hacer un fork y enviar pull requests. Asegúrate de seguir las mejores prácticas y agregar comentarios al código.
