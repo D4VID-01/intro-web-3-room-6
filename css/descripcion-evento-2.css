@@ -1,0 +1,156 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e2e2e2;
+  color: #f4f4f4;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #253d5b;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  flex-wrap: wrap;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.titulo-evento {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.titulo-evento h2 {
+  font-size: 2rem;
+  color: #fec601;
+  margin: 5px 0;
+}
+
+.titulo-evento p {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+header button {
+  background-color: #fec601;
+  color: #253d5b;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+header button:hover {
+  background-color: #91c4f2;
+  color: #222;
+}
+
+main {
+  padding: 20px;
+  text-align: center;
+}
+
+.evento {
+  background-color: #9d79bc;
+  color: #222;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  max-width: 800px;
+  margin: auto;
+}
+
+.evento img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.destacada {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.detalles {
+  margin-top: 25px;
+  text-align: left;
+  padding: 0 10%;
+}
+
+.detalles p {
+  background-color: #91c4f2;
+  color: #222;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+}
+
+.emoji {
+  margin-right: 10px;
+  font-size: 1.4rem;
+}
+
+.boleto {
+  display: inline-block;
+  background-color: #fec601;
+  color: #253d5b;
+  padding: 12px 20px;
+  margin-top: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.boleto:hover {
+  background-color: #91c4f2;
+  color: #222;
+}
+
+.mapa {
+  margin-top: 25px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#logo-modi{
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .detalles {
+    padding: 0 5%;
+  }
+
+  .evento {
+    padding: 15px;
+  }
+}
